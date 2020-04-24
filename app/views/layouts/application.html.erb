@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>무료 로또 예측 사이트</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <h1>
+		2020 로또 예측 사이트
+	  </h1>
+	  <h3>
+		  900회의 로또 1등 당첨 번호를 분석하여 만든 최신 로또 예측 사이트 입니다.
+		  코딩을 배우며 시험삼아 만들어 보았습니다.
+	  </h3>
+	  <%= yield %>
+	  <button onClick="window.location.reload();">새로고침</button>
+  </body>
+</html>
